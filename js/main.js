@@ -2,7 +2,7 @@ const squareInput = document.querySelector('#square-input');
 const squareRange = document.querySelector('#square-range');
 const basePrice = 6000;
 const inputs = document.querySelectorAll('input');
-let totalPrice =
+let totalPrice = document.getElementById('total-price');
 
 squareRange.addEventListener('input', function() {
 	squareInput.value = squareRange.value;
@@ -23,3 +23,5 @@ for (const item of inputs) {
 		calculate();
 	})
 }
+
+console.log(totalPrice);
