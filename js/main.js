@@ -14,7 +14,7 @@ squareInput.addEventListener('input', ()=>{
 
 function calculate() {
 	let calcPrice = basePrice * parseInt(squareInput.value);
-	console.log(calcPrice)
+	console.log(calcPrice);
 };
 calculate();
 
