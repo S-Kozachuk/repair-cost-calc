@@ -15,7 +15,11 @@ squareInput.addEventListener('input', ()=>{
 
 function calculate() {
 	let calcPrice = basePrice * parseInt(squareInput.value);
-	console.log(calcPrice);
+	for(const item of repairType) {
+		if (item.checked) {
+			calcPrice = calcPrice * parseFloat(item.value);
+		}
+	}
 	const formatter = new Intl.NumberFormat('ru');
 	totalPrice.innerText = formatter.format(calcPrice);
 };
@@ -26,5 +30,3 @@ for (const item of inputs) {
 		calculate();
 	})
 }
-
-console.log(totalPrice);
