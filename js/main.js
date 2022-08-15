@@ -4,9 +4,12 @@ const inputs = document.querySelectorAll('input'),
 	repairType = document.querySelectorAll('input[name="type"]'),
 	houseType = document.querySelectorAll('input[name="building"]'),
 	numberOfRooms = document.querySelectorAll('input[name="rooms"]'),
+	ceilings = doceument.querySelectorAll('input[name="ceiling"]'),
+	walls = document.querySelectorAll('input[name="walls"]'),
+	floor = document.querySelectorAll('input[name="floor]'),
 	basePrice = 6000;
 let totalPrice = document.getElementById('total-price');
-console.log(numberOfRooms);
+
 squareRange.addEventListener('input', function() {
 	squareInput.value = squareRange.value;
 });
@@ -17,6 +20,7 @@ squareInput.addEventListener('input', ()=>{
 
 function calculate() {
 	let calcPrice = basePrice * parseInt(squareInput.value);
+	
 	for(const item of repairType) {
 		if (item.checked) {
 			calcPrice = calcPrice * parseFloat(item.value);
