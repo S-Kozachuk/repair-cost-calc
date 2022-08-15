@@ -4,9 +4,9 @@ const inputs = document.querySelectorAll('input'),
 	repairType = document.querySelectorAll('input[name="type"]'),
 	houseType = document.querySelectorAll('input[name="building"]'),
 	numberOfRooms = document.querySelectorAll('input[name="rooms"]'),
-	ceilings = doceument.querySelectorAll('input[name="ceiling"]'),
+	ceilings = document.querySelectorAll('input[name="ceiling"]'),
 	walls = document.querySelectorAll('input[name="walls"]'),
-	floor = document.querySelectorAll('input[name="floor]'),
+	floor = document.querySelectorAll('input[name="floor"]'),
 	basePrice = 6000;
 let totalPrice = document.getElementById('total-price');
 
@@ -35,6 +35,16 @@ function calculate() {
 		if (item.checked) {
 			calcPrice = calcPrice * parseFloat(item.value);
 		}
+	}
+	if(ceilings.checked) {
+		calcPrice = calcPrice * parseFloat(ceilings.value);
+		console.log('Ceiling');
+	}
+	if(walls.checked) {
+		calcPrice = calcPrice * parseFloat(walls.value);
+	}
+	if(floor.checked) {
+		calcPrice = calcPrice * parseFloat(floor.value);
 	}
 	const formatter = new Intl.NumberFormat('ru');
 	totalPrice.innerText = formatter.format(calcPrice);
