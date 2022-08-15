@@ -40,7 +40,7 @@ function calculate() {
 	}
 
 	if(ceilings.checked) {
-		calcPrice = calcPrice * parseInt(ceilings.value);
+		calcPrice = calcPrice * parseFloat(ceilings.value);
 	}
 	if(walls.checked) {
 		calcPrice = calcPrice * parseFloat(walls.value);
