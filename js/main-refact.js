@@ -51,8 +51,9 @@ function calculate() {
 };
 calculate();
 
-for (const item of inputs) {
-	item.addEventListener('input',()=>{
+for (const input of inputs) {
+	input.addEventListener('input',(e)=>{
+		console.log(e.target.value);
 		calculate();
 	})
 }
