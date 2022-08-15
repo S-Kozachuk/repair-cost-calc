@@ -4,12 +4,14 @@ const inputs = document.querySelectorAll('input'),
 	repairType = document.querySelectorAll('input[name="type"]'),
 	houseType = document.querySelectorAll('input[name="building"]'),
 	numberOfRooms = document.querySelectorAll('input[name="rooms"]'),
-	ceilings = document.querySelectorAll('input[name="ceiling"]'),
-	walls = document.querySelectorAll('input[name="walls"]'),
-	floor = document.querySelectorAll('input[name="floor"]'),
+	ceilings = document.querySelector('input[name="ceiling"]'),
+	walls = document.querySelector('input[name="walls"]'),
+	floor = document.querySelector('input[name="floor"]'),
 	basePrice = 6000;
 let totalPrice = document.getElementById('total-price');
-
+console.log(ceilings);
+console.log(walls);
+console.log(floor);
 squareRange.addEventListener('input', function() {
 	squareInput.value = squareRange.value;
 });
@@ -36,9 +38,9 @@ function calculate() {
 			calcPrice = calcPrice * parseFloat(item.value);
 		}
 	}
+
 	if(ceilings.checked) {
-		calcPrice = calcPrice * parseFloat(ceilings.value);
-		console.log('Ceiling');
+		calcPrice = calcPrice * parseInt(ceilings.value);
 	}
 	if(walls.checked) {
 		calcPrice = calcPrice * parseFloat(walls.value);
