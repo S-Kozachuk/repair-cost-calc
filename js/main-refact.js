@@ -9,9 +9,7 @@ const inputs = document.querySelectorAll('input'),
 	floor = document.querySelector('input[name="floor"]'),
 	basePrice = 6000;
 let totalPrice = document.getElementById('total-price');
-console.log(ceilings);
-console.log(walls);
-console.log(floor);
+
 squareRange.addEventListener('input', function() {
 	squareInput.value = squareRange.value;
 });
