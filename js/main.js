@@ -21,6 +21,11 @@ function calculate() {
 			calcPrice = calcPrice * parseFloat(item.value);
 		}
 	}
+	for(const item of houseType) {
+		if (item.checked) {
+			calcPrice = calcPrice * parseFloat(item.value);
+		}
+	}
 	const formatter = new Intl.NumberFormat('ru');
 	totalPrice.innerText = formatter.format(calcPrice);
 };
