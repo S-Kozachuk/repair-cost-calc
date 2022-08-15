@@ -1,11 +1,12 @@
-const inputs = document.querySelectorAll('input');
-const squareInput = document.querySelector('#square-input');
-const squareRange = document.querySelector('#square-range');
-const repairType = document.querySelectorAll('input[name="type"]');
-const houseType = document.querySelectorAll('input[name="building"]');
-const basePrice = 6000;
+const inputs = document.querySelectorAll('input'),
+	squareInput = document.querySelector('#square-input'),
+	squareRange = document.querySelector('#square-range'),
+	repairType = document.querySelectorAll('input[name="type"]'),
+	houseType = document.querySelectorAll('input[name="building"]'),
+	numberOfRooms = document.querySelectorAll('input[name="rooms"]'),
+	basePrice = 6000;
 let totalPrice = document.getElementById('total-price');
-
+console.log(numberOfRooms);
 squareRange.addEventListener('input', function() {
 	squareInput.value = squareRange.value;
 });
