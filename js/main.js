@@ -38,7 +38,7 @@ function calculate() {
 	}
 
 	if(ceilings.checked) {
-		calcPrice = calcPrice * parseFloat(ceilings.value);
+		calcPrice = calcPrice + parseFloat(ceilings.value)*parseInt(squareInput.value)
 	}
 	if(walls.checked) {
 		calcPrice = calcPrice * parseFloat(walls.value);
