@@ -2,6 +2,7 @@ const inputs = document.querySelectorAll('input');
 const squareInput = document.querySelector('#square-input');
 const squareRange = document.querySelector('#square-range');
 const repairType = document.querySelectorAll('input[name="type"]');
+const houseType = document.querySelectorAll('input[name="building"]');
 const basePrice = 6000;
 let totalPrice = document.getElementById('total-price');
 
