@@ -344,7 +344,17 @@ h6 {
 
 .rooms-wrapper {
 	display: flex;
-	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.rooms-wrapper {
+		justify-content: unset;
+	}
+}
+
+.rooms-label {
+	height: 35px;
 }
 
 .rooms-radio-real {
@@ -363,7 +373,6 @@ h6 {
 	text-align: center;
 	line-height: 40px;
 	font-size: 20px;
-	/* font-weight: bold; */
 	cursor: pointer;
 }
 
