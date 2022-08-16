@@ -89,10 +89,20 @@ img {
 }
 
 .footer-text {
-	margin: 0;
-	font-size: 18px;
+	margin: 0 auto;
+	font-size: 13px;
 	font-weight: 400;
 	letter-spacing: 0.43px;
+	max-width: 290px;
+}
+
+@media (min-width: 768px) {
+	.footer-text {
+		margin: 0;
+		font-size: 18px;
+		max-width: unset;
+	}
+		
 }
 
 .footer-text a {
