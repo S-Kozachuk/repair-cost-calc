@@ -223,9 +223,16 @@ h6 {
 }
 
 .radio-wrapper .radio {
+	margin-top: 3px;
 	margin-right: 15px;
-	margin-top: 6px;
 }
+
+@media (min-width: 768px) {
+	.radio-wrapper .radio {
+		margin-top: 6px;
+	}
+}
+
 
 /* .radio-holder {
 	margin-right: 15px;
