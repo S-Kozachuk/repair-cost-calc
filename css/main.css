@@ -285,8 +285,14 @@ h6 {
 }
 
 .title-lite {
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 300;
+}
+
+@media (min-width: 768px) {
+	.title-lite {
+		font-size: 20px;
+	}
 }
 
 .note {
