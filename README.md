@@ -1,7 +1,7 @@
 ## Project "Repair cost calculator"
 
 
-Educational project based on the lesson of Yuri Klyuchevsky from the [WebCademi] (https://youtu.be/JbQB_49ijqw) school. A simple calculator to calculate the cost of repairs on native JS.
+Educational project based on the lesson of Yuri Klyuchevsky from the [WebCademi](https://youtu.be/JbQB_49ijqw) school. A simple calculator to calculate the cost of repairs on native JS.
 
 
 **Stack:** HTML, CSS, JS
