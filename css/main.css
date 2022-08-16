@@ -249,14 +249,22 @@ h6 {
 }
 
 .input-short {
-	width: 62px;
-	height: 36px;
+	width: 45px;
+	height: 30px;
 	border-radius: 4px;
 	border: 1px solid #9a9a9a;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #039be5;
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.input-short {
+		width: 62px;
+		height: 36px;
+		font-size: 24px;
+	}
 }
 
 .input-wrapper .input-short:first-child {
