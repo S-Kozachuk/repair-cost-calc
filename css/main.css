@@ -308,6 +308,10 @@ h6 {
 
 .checkbox-wrapper {
 	display: flex;
+	margin-bottom: 15px;
+}
+
+.checkbox-wrapper-calc {
 	margin-bottom: 0;
 }
 
